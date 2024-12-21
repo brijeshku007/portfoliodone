@@ -2,12 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import simonsay from "../../Assets/Projects/simonsay.png";
+import nextflix from "../../Assets/Projects/netflix2.png";
+import excel from "../../Assets/Projects/excel.png";
+import whiteBoard from "../../Assets/Projects/white.png";
+
 
 function Projects() {
   return (
@@ -23,70 +22,55 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={nextflix}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="StreamMe"
+              description="Built a Netflix like Streaming application to  providing dynamic content recommendations .Implemented Firebase Authentication to handle secure user sign-up, login, and session management.Utilized the TMDB API to fetch and display real-time data on movies and TV shows.To give AI Feature to our application ,i used google generativeai Api and make the functionality like Seaching movies."
+              ghLink="https://github.com/brijeshku007/netflix-gpt"
+              demoLink="https://streamme007.netlify.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={whiteBoard}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Marker-Board"
+              description="Developed an interactive whiteboard using js resulting in a 25% increase in user engagement through real-time drawing.
+              Designed a variety of drawing tools, including pens, brushes, and erasers, with customizable colors and sizes.
+              Implemented article-saving functionality that led to a 40% increase in returning users, allowing them to save
+              Created Redo-Undo Features for Board using Array as a Stack by storing positions"
+              ghLink="https://github.com/brijeshku007/whiteboardfinal"
+              demoLink="https://brijeshku007.github.io/whiteboardfinal/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={excel}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Excel-Clone"
+              description=" Implemented functionality for users to input text and numbers directly into cells.
+              Enabled basic arithmetic operations (addition, subtraction, multiplication, division) within cells, similar to Excel formulas.
+              Users can dynamically add, delete, and resize rows and columns.
+              Added options for users to format text, such as bold, italic, and alignment, offering a more personalized user experience."
+              ghLink="https://github.com/brijeshku007/excel_clone"
+              demoLink="https://brijeshku007.github.io/excel_clone/"              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={simonsay}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Simon-Say Game"
+              description=" Created a random color sequence that players must repeat by clicking the corresponding buttons.     Implemented a difficulty progression where the game adds one new color to the sequence after each round, challenging the player’s memory as they go. Implemented logic to track the sequence, round, and score, and added error detection to trigger a game-over message and allow for restart."
+              ghLink="https://github.com/brijeshku007/Simon-say-game"
+              demoLink="https://brijeshku007.github.io/Simon-say-game/"
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-            />
-          </Col>
+         
         </Row>
       </Container>
     </Container>
