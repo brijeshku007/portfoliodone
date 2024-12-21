@@ -17,7 +17,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:4000/send', formData);
+      const response = await axios.post('https://emailsend-ashy.vercel.app/send', formData);
       console.log('Email sent successfully', response);
       alert('Message sent successfully!');
     } catch (error) {
