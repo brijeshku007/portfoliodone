@@ -18,11 +18,11 @@ This project was built using these technologies.
 
 **📱 Fully Responsive**
 
-## Getting Started
+
 
 Clone down this repository. You will need `node.js` and `git` installed globally on your machine.
 
-## 🛠 Installation and Setup Instructions
+
 
 1. Installation: `npm install`
 
@@ -30,6 +30,5 @@ Clone down this repository. You will need `node.js` and `git` installed globally
 
 
 
-### Show your support
 Give a ⭐ if you like this website!
 
