@@ -1,4 +1,7 @@
 
+## Deployment
+
+You can access the deployed application here: [Deployed Application](https://portfolio-psi-lovat-72.vercel.app/)
 
 
 This project was built using these technologies.
