@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import axios from 'axios';
-
+const apiUrl = process.env.REACT_APP_API_URL;
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -17,8 +17,9 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('https://emailsend-ashy.vercel.app/send', formData);
+      const response = await axios.post(apiUrl, formData);
       console.log('Email sent successfully', response);
+     
       alert('Message sent successfully!');
     } catch (error) {
       console.error('Error sending message', error);
